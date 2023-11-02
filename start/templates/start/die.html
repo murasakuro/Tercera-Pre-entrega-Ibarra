@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block tab_title %}
+    Dados
+{% endblock tab_title %}
+    
+{% block h1_header %}
+    Dados 
+{% endblock h1_header %}
+
+{% block search %}
+<form action="">
+    <input type="number" name="faces" placeholder='Numero de Caras'>
+    <input type="submit" value="Buscar">
+</form>
+{% endblock search %}
+
+{% block masthead_subheading %}
+    
+{% endblock masthead_subheading %}
+
+{% block h2_second_section %}
+    Nuestros Dados
+{% endblock h2_second_section %}
+
+{% block item_list %}
+<ul>
+    {% for die in dice_list %}
+    <li>{{die}}</li> 
+    {% endfor %}
+</ul>      
+{% endblock item_list %}
+    
+{% block h2_about %}
+<a class="nav-link py-3 px-0 px-lg-3 rounded" href={% url "make_dice" %}>Crear Dado</a></li>
+{% endblock h2_about %}
+
+{% block main %}
+
+{% endblock main %}
+    
+{% block paragraph1_about %}
+
+{% endblock paragraph1_about %}
+
+{% block paragraph2_about %}
+    
+{% endblock paragraph2_about %}
